@@ -2,8 +2,14 @@
 // To se the latest configuration fetch it from https://api.themoviedb.org/3/configuration?api_key=019e8f375549e0bbd4a4191862ebc88f
 // Read more about the API here: https://developers.themoviedb.org/
 
+//**Remove lines 6-7 when app working properly**//
+// const API_URL =
+//   "https://api.themoviedb.org/3/movie/550?api_key=xxxxxxxxxxxxxxxxxxxxx"; //"https://api.themoviedb.org/3/";
+// const API_KEY = process.env.API_KEY;
+
 const API_URL = "https://api.themoviedb.org/3/";
-export const API = process.env.API_KEY;
+const API_KEY = "844dba0bfd8f3a4f3799f6130ef9e335";
+
 const IMAGE_BASE_URL = "http://image.tmdb.org/t/p/";
 // Sizes: w300, w780, w1280, original
 const BACKDROP_SIZE = "w1280";
