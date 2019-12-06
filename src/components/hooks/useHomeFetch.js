@@ -27,7 +27,7 @@ export const useHomeFetch = () => {
   };
 
   useEffect(() => {
-    fetchMovies(`${API_URL}/movie/popular?api_key=${API_KEY}`);
+    fetchMovies(`${API_URL}movie/popular?api_key=${API_KEY}`);
   }, []);
 
   return [{ state, loading, error }, fetchMovies];
