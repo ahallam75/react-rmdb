@@ -14,15 +14,17 @@ const Movie = ({ movieId }) => {
   const [movie, loading, error] = useMovieFetch(movieId);
   console.log(movie);
 
+  if (error) return <div>Something went wrong ...</div>;
+  if (loading) return <Spinner />;
+
   return (
     <React.Fragment>
-      <Navigation />
-      <MovieInfo />
+      <Navigation movie={movie.original_title} />
+      <MovieInfo movie={movie} />
       <MovieInfoBar />
       <Grid>
         <Actor />
       </Grid>
-      <Spinner />
     </React.Fragment>
   );
 };
