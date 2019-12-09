@@ -30,7 +30,7 @@ const Home = () => {
       error
     },
     fetchMovies
-  ] = useHomeFetch();
+  ] = useHomeFetch(searchTerm);
 
   const searchMovies = search => {
     const endpoint = search ? SEARCH_BASE_URL + search : POPULAR_BASE_URL;
